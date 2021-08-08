@@ -19,8 +19,18 @@ Projeto desenvolvido estudando como criar um processo completo de autenticação
   - Aba Profiler: mostra quais componentes renderizaram a partir de alguma ação do usuário, porque renderizou, quanto demorou, etc.
 - memo
   - Função React que ao ser utilizada em um componente ele só renderiza quando houver alteração em relação a sua versão anterior, ou seja, não renderiza quando um componente pai renderizar.
-  - Deve ser usado em 3 situações: em componentes puros, funções que dados os mesmos parâmetros sempre retornam o mesmo resultado, são apenas para abstrair uma parte visual; em componentes que renderizam de mais; em componentes que renderizam novamente com os mesmo parâmetros.
+  - Deve ser usado em 3 situações:
+    - em componentes puros, funções que dados os mesmos parâmetros sempre retornam o mesmo resultado, são apenas para abstrair uma parte visual;
+    - em componentes que renderizam demais;
+    - em componentes que renderizam novamente com os mesmo parâmetros.
 - useMemo
-  - Hook utilizado em cálculos pesados realizados em um componente React, para que a performance não seja afetada com o cálculo sendo realizado toda vez que o componente é renderizado mas suas variáveis estão iguais. Portanto, usa um array de parâmetros como no useEffect, que faz com que o cálculo só é realizado se houver alteração neles.
+  - Hook utilizado para memorizar um valor.
+  - Deve ser usado em 2 situações:
+    - em cálculos pesados realizados em um componente React, para que a performance não seja afetada com o cálculo sendo realizado toda vez que o componente é renderizado mas suas variáveis estão iguais;
+    - para igualdade referencial, quando é repassado uma informação a um componente filho, para que essa informação não seja recriada do zero, não ocupe um novo espaço na memória.
+- useCallback
+  - Hook utilizado para memorizar uma função.
+  - Deve ser usado somente em 1 situação:
+    - para igualdade referencial, quando é repassada uma função a um componente filho, para que essa função não seja recriada do zero, não ocupe um novo espaço na memória.
 
 Por Felipe Brenner

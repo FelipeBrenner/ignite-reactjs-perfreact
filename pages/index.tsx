@@ -1,5 +1,5 @@
-import { FormEvent, useState } from "react";
-import { SearchResult } from "../components/SearchResult";
+import { FormEvent, useCallback, useState } from "react";
+import { SearchResults } from "../components/SearchResults";
 
 import styles from "../styles/Home.module.css";
 
@@ -20,6 +20,10 @@ export default function Home() {
     setResults(data);
   }
 
+  const addToWishList = useCallback(async (id: number) => {
+    console.log(id);
+  }, []);
+
   return (
     <div>
       <h1>Search</h1>
@@ -29,7 +33,7 @@ export default function Home() {
         <button type="submit">Buscar</button>
       </form>
 
-      <SearchResult results={results} />
+      <SearchResults results={results} onAddToWishList={addToWishList} />
     </div>
   );
 }

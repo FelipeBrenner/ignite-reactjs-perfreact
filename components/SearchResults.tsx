@@ -8,9 +8,13 @@ interface ISearchResultsProps {
     price: number;
     title: string;
   }>;
+  onAddToWishList: (id: number) => void;
 }
 
-export function SearchResult({ results }: ISearchResultsProps) {
+export function SearchResults({
+  results,
+  onAddToWishList,
+}: ISearchResultsProps) {
   const totalPrice = useMemo(() => {
     return results.reduce((total, product) => {
       return total + product.price;
@@ -21,7 +25,11 @@ export function SearchResult({ results }: ISearchResultsProps) {
     <div>
       <h2>{totalPrice}</h2>
       {results.map((product) => (
-        <ProductItem key={product.id} product={product} />
+        <ProductItem
+          key={product.id}
+          product={product}
+          onAddToWishList={onAddToWishList}
+        />
       ))}
     </div>
   );
