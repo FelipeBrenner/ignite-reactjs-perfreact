@@ -1,16 +1,16 @@
 <img alt="ignite-reactjs" title="ignite-reactjs" src=".github/cover-reactjs.png">
 
 <h1 align="center">
-  Autenticação e autorização
+  Perfomando apps com ReactJS
 </h1>
 
 ## 💻 Repositório
 
-Projeto desenvolvido estudando como criar um processo completo de autenticação, autorização e refresh token dentro do React com Next.js, permitindo controlar o acesso à rotas e componentes tanto no client-side quanto no server-side.
+Projeto desenvolvido estudando como performar aplicações com React entendendo como funcionam os algoritmos internos da biblioteca e todo o fluxo de renderização de componentes.
 
 ## 📖 Bibliotecas, funções, hooks e recursos
 
-- Developer Tools
+- Extensão Developer Tools
   - Aba Components: exibe a árvore dos componentes React e informações de cada um, como props, hooks e por quem foi renderizado; há um check box "Highlight updates when components render", que quando marcado realça quais componentes estão sendo renderizados em cada ação do usuário.
   - Aba Profiler: mostra quais componentes renderizaram a partir de alguma ação do usuário, porque renderizou, quanto demorou, etc.
 - memo
