@@ -32,5 +32,9 @@ Projeto desenvolvido estudando como criar um processo completo de autenticação
   - Hook utilizado para memorizar uma função.
   - Deve ser usado somente em 1 situação:
     - para igualdade referencial, quando é repassada uma função a um componente filho, para que essa função não seja recriada do zero, não ocupe um novo espaço na memória.
+- Code Splitting
+  - Lazy no React, ou Dynamic no Next, servem para uma importação ser realizada somente quando ela for utilizada.
+
+---
 
 Por Felipe Brenner
