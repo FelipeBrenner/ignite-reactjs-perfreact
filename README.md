@@ -32,6 +32,8 @@ Projeto desenvolvido estudando como criar um processo completo de autenticação
   - Lazy no React, ou Dynamic no Next, servem para uma importação ser realizada somente quando ela for utilizada.
 - react-virtualized
   - Biblioteca para quando houver uma lista grande para exibir em tela, renderizar o html somente do que estiver visível conforme a barra de rolagem.
+- Bundle Analyzer
+  - Biblioteca para analisar o tamanho de tudo que compõe a build.
 
 ---
 
