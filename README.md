@@ -4,15 +4,11 @@
   Autenticação e autorização
 </h1>
 
-## 🚀 Tecnologias e bibliotecas utilizadas
-
-- React.js
-
 ## 💻 Repositório
 
 Projeto desenvolvido estudando como criar um processo completo de autenticação, autorização e refresh token dentro do React com Next.js, permitindo controlar o acesso à rotas e componentes tanto no client-side quanto no server-side.
 
-## 📖 Funções, hooks e recursos
+## 📖 Bibliotecas, funções, hooks e recursos
 
 - Developer Tools
   - Aba Components: exibe a árvore dos componentes React e informações de cada um, como props, hooks e por quem foi renderizado; há um check box "Highlight updates when components render", que quando marcado realça quais componentes estão sendo renderizados em cada ação do usuário.
@@ -34,6 +30,8 @@ Projeto desenvolvido estudando como criar um processo completo de autenticação
     - para igualdade referencial, quando é repassada uma função a um componente filho, para que essa função não seja recriada do zero, não ocupe um novo espaço na memória.
 - Code Splitting
   - Lazy no React, ou Dynamic no Next, servem para uma importação ser realizada somente quando ela for utilizada.
+- react-virtualized
+  - Biblioteca para quando houver uma lista grande para exibir em tela, renderizar o html somente do que estiver visível conforme a barra de rolagem.
 
 ---
 
